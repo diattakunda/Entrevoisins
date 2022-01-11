@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/newfunction"
+    android:background="#ecf0f1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/cadre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="325dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+
+
+        <TextView
+            android:id="@+id/ImageCaroline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/imageView"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Caroline"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"></TextView>
+
+        <ImageButton
+            android:id="@+id/returnArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:onClick="arrow"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/FAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/cadre1"
+            android:layout_alignBottom="@id/Caroline"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="290dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/cardview_light_background"
+            android:contentDescription="favorittes"
+            android:onClick="addFavorite"
+            app:backgroundTint="#FFFFFF"
+            app:srcCompat="@drawable/ic_star_white_24dp"
+            app:tint="#F9D211">
+
+        </android.support.design.widget.FloatingActionButton>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cadre1"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:padding="70dp">
+
+
+        <TextView
+            android:id="@+id/Caroline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:text="Caroline"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/localisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:drawableStart="@drawable/map"
+            android:drawablePadding="10dp"
+            android:text="Saint Pierre du mont à 5km" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="90dp"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="10dp"
+            android:text="+33 6 86 57 90 14" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="130dp"
+            android:drawableStart="@drawable/reseaux"
+            android:drawablePadding="10dp"
+            android:text="www.facebook.fr/Caroline" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cadre2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#FFFFFF"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/AProposDeMoi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="A propos de moi"
+            android:textColor="@android:color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="5dp"
+            android:text="Bonjour! Je souhaiterais faire de la marche nordique.
+Pas initée, je recherche une ou plusieurs personnes suceptibles de m'accompagner! J'aime les jeux de cartes tels la belote et le tarot." />
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+
